@@ -1,12 +1,12 @@
 # xeus kernels + JupyterLite demo
 
-[![lite-badge](https://jupyterlite.rtfd.io/en/latest/_static/badge.svg)](https://jupyterlite.github.io/xeus-python-demo/notebooks/?path=demo.ipynb)
+[![lite-badge](https://jupyterlite.rtfd.io/en/latest/_static/badge.svg)](https://jupyterlite.github.io/xeus-lite-demo/notebooks/?path=demo.ipynb)
 
 xeus kernels + JupyterLite deployed as a static site to GitHub Pages, for demo purposes.
 
 ## ✨ Try it in your browser ✨
 
-https://jupyterlite.github.io/xeus-python-demo/notebooks/?path=demo.ipynb
+https://jupyterlite.github.io/xeus-lite-demo/notebooks/?path=demo.ipynb
 
 ## 💡 How to make your own deployment
 
