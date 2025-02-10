@@ -1,8 +1,8 @@
-name: xeus-python-kernel
+name: xeus-kernel
 channels:
   - https://repo.mamba.pm/emscripten-forge
   - conda-forge
 dependencies:
-  - python=3.11
+  - python
   - xeus-python
   - ipycanvas
