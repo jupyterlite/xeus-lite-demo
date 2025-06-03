@@ -34,41 +34,46 @@ For a step-by-step visual guide, check out the screencast below:
 
 You can install specific kernels and extra packages by adding them to the ``environment.yml`` file.
 
-### Example: JupyterLite with NumPy and Matplotlib
+See https://jupyterlite-xeus.readthedocs.io/en/latest/environment.html for more documentation.
+
+### Example 1: JupyterLite with NumPy and Matplotlib
 
 To create a JupyterLite deployment with NumPy and Matplotlib pre-installed, edit the ``environment.yml`` file as follows:
 
 ```yml
 name: xeus-kernel
 channels:
-  - https://repo.mamba.pm/emscripten-forge
-  - conda-forge
+  - https://repo.prefix.dev/emscripten-forge-dev
+  - https://repo.prefix.dev/conda-forge
 dependencies:
   - xeus-python
   - numpy
   - matplotlib
 ```
 
-### Example: JupyterLite with R and coursekata
+### Example 2: JupyterLite with R and coursekata
 
 To use the R kernel and the coursekata package, edit the environment.yml file as follows:
 
 ```yml
 name: xeus-kernel
 channels:
-  - https://repo.mamba.pm/emscripten-forge
-  - conda-forge
+  - https://repo.prefix.dev/emscripten-forge-dev
+  - https://repo.prefix.dev/conda-forge
 dependencies:
   - xeus-r
   - r-coursekata
 ```
 
-### Package Compatibility
+### Example 3: JupyterLite with C++
 
-Only ``no-arch`` packages from ``conda-forge`` and packages from ``emscripten-forge`` can be installed.
+To use the C++ kernel, edit the environment.yml file as follows:
 
-- **How do I know if a package is ``no-arch`` on ``conda-forge``?** ``no-arch`` means that the package is OS-independent, usually pure-python packages are ``no-arch``. To check if your package is ``no-arch`` on ``conda-forge``, check if the "Platform" entry is "no-arch" in the https://beta.mamba.pm/channels/conda-forge?tab=packages page. If your package is not ``no-arch`` but is a pure Python package, then you should probably update the feedstock to turn your package into a ``no-arch`` one.
-![](noarch.png)
-
-- **How do I know if my package is on ``emscripten-forge``?** You can see the list of packages pubished on ``emscripten-forge`` [here](https://beta.mamba.pm/channels/emscripten-forge?tab=packages). In case your package is missing, or it's not up-to-date, feel free to open an issue or a PR on https://github.com/emscripten-forge/recipes.
-
+```yml
+name: xeus-kernel
+channels:
+  - https://repo.prefix.dev/emscripten-forge-dev
+  - https://repo.prefix.dev/conda-forge
+dependencies:
+  - xeus-cpp
+```
