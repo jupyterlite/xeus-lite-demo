@@ -77,3 +77,7 @@ channels:
 dependencies:
   - xeus-cpp
 ```
+
+## 📦 How to install other jupyterlite plugins
+
+If you want to install jupyterlite plugins, e.g. `jupyterlite-terminal`, add those plugins to the `.github/build-environment.yml` file.
